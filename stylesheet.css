@@ -92,6 +92,7 @@ body{
     width: 150px;
     height: 150px;
 }
+/* Allow object to look as if they come out when hoving above them */
 .object:hover {
     border: 2px solid black;
     border-radius: 15px;
