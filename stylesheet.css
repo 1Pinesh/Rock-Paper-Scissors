@@ -17,3 +17,6 @@ body{
     align-items: center;
 }
 
+.r-list {
+    list-style: none;
+}
