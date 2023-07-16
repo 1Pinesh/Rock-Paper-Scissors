@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lugrasimo&display=swap');
+
 body{
     background-color: bisque;
 }
@@ -54,3 +57,18 @@ body{
     border: 1px solid black;
     margin: 30px;
 }
+/* getting the score in the centre */
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* setting the Score board size */
+.score {
+    font-size: 35px;
+    font-family: 'Lugrasimo', cursive;
+}
+
+
+
+
