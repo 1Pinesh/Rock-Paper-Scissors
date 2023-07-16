@@ -1,3 +1,19 @@
 body{
     background-color: bisque;
 }
+/* changing the header to show all element in a single row */
+.header{
+    display: flex;
+    flex-direction: row;
+}
+/* making the logo and link to be on the right side */
+.header{
+    justify-content: space-between;
+}
+/* Getting logo to be in the centre of both x and y axis */
+.logo-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
