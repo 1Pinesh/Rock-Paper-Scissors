@@ -41,3 +41,16 @@ body{
 .r-list {
     list-style: none;
 }
+
+/*********************Main-Section****************************/
+/* adding a margin to left and right*/
+.main {
+    border: 1px solid red;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* adding a margin all around*/
+.outline-con{
+    border: 1px solid black;
+    margin: 30px;
+}
