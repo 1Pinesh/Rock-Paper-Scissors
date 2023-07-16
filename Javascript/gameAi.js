@@ -14,8 +14,8 @@ let computer_Choice = "" ;
 //add eventlisten on each object and updates the player option 
 r.addEventListener("click", () => {
     player_Choice = "Rock"
+    
     let aiValue = aiChoiceGenerator()
-
     switch(aiValue) {
         case 1 :
             computer_Choice ="Rock"
@@ -27,22 +27,43 @@ r.addEventListener("click", () => {
             computer_Choice ="Scissor"
             break;            
     }
-
-    // gameRule(player_Choice,computer_Choice)
-    console.log(gameRule(player_Choice,computer_Choice))
-    console.log(aiValue)
-    console.log(player_Choice)
-    console.log(computer_Choice )
+   gameRule(player_Choice,computer_Choice)
 })
 
 p.addEventListener("click", () => {
     player_choice = "Paper"
-    console.log("paper")
+    
+    let aiValue = aiChoiceGenerator()
+    switch(aiValue) {
+        case 1 :
+            computer_Choice ="Rock"
+            break;
+        case 2:
+            computer_Choice ="Paper";
+            break;
+        case 3:
+            computer_Choice ="Scissor"
+            break;            
+    }
+   gameRule(player_Choice,computer_Choice)
 })
 
 s.addEventListener("click", () => {
     player_choice = "Scissor"
-    console.log("sissior")
+    
+    let aiValue = aiChoiceGenerator()
+    switch(aiValue) {
+        case 1 :
+            computer_Choice ="Rock"
+            break;
+        case 2:
+            computer_Choice ="Paper";
+            break;
+        case 3:
+            computer_Choice ="Scissor"
+            break;            
+    }
+   gameRule(player_Choice,computer_Choice)
 })
 
 // get a number from 1 to 3 and round any decimal to the closet interger
