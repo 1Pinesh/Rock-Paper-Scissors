@@ -13,25 +13,17 @@ r.addEventListener("click", () => {
     player_Choice = "Rock"
     let aiValue = aiChoiceGenerator()
 
-    if (aiValue == 1) {
-        computer_Choice = "Rock"
-    } else if (aiVlaue == 2) {
-        computer_Choice == "Paper"
-    } else if (aiValue == 3) {
-        computer_Choice = "Sissior"
+    switch(aiValue) {
+        case 1 :
+            computer_Choice ="Rock"
+            break;
+        case 2:
+            computer_Choice ="Paper";
+            break;
+        case 3:
+            computer_Choice ="Sissior"
+            break;            
     }
-
-    // switch(aiValue) {
-    //     case 1 :
-    //         computer_Choice ="Rock"
-    //         break;
-    //     case 2:
-    //         computer_Choice ="Paper";
-    //         break;
-    //     case 3:
-    //         computer_Choice ="Sissior"
-    //         break;            
-    // }
     console.log(aiValue)
     // console.log(player_Choice)
     console.log(computer_Choice )
@@ -48,5 +40,5 @@ s.addEventListener("click", () => {
 })
 // get a number from 1 to 3 and round any decimal to the closet interger
 function aiChoiceGenerator() {
- return Math.round((Math.random()*3))
+ return Math.floor(Math.random()*3)+1
 }
