@@ -68,6 +68,25 @@ body{
     font-size: 35px;
     font-family: 'Lugrasimo', cursive;
 }
+/* Setting the title to the centre */
+.title-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* setting the font and size of the title */
+.title-text {
+    font-size: 35px;
+    font-family: 'Lugrasimo', cursive;
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+.option-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Setting all image to be the same size*/
 .object {
     width: 150px;
     height: 150px;
