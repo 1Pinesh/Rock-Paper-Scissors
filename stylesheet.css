@@ -9,6 +9,8 @@ body{
 /* making the logo and link to be on the right side */
 .header{
     justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 50px;
 }
 /* Getting logo to be in the centre of both x and y axis */
 .logo-con {
@@ -29,8 +31,10 @@ body{
     align-items: center;
     font-size: 1.5em;
 }
+/* removing underline */
 .r-list a {
     text-decoration: none;
+    color: black;
 }
 
 /* removing the bullet points */
