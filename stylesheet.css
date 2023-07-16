@@ -17,6 +17,23 @@ body{
     align-items: center;
 }
 
+/* making the list have each item on the same row with gap */
+.r-list {
+    display: flex;
+    flex-direction: row;
+    gap:40px
+}
+/* making the list in centre  */
+.r-list {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.r-list a {
+    text-decoration: none;
+}
+
+/* removing the bullet points */
 .r-list {
     list-style: none;
 }
