@@ -3,6 +3,7 @@
 
 body{
     background-color: bisque;
+    margin: 0;
 }
 /* changing the header to show all element in a single row */
 .header{
@@ -110,6 +111,7 @@ body{
     margin-top: 50px;
 
 }
+/* Spacing out the two container that hold the option of the player and ai */
 .player-option ,.computer-option {
     display: flex;
     flex-direction: column;
@@ -122,8 +124,33 @@ body{
 .player-option ,.computer-option {
  padding: 50px;
 }
+/* Winning Message */
+.winner-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lugrasimo', cursive;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
 
+/* Footer */
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot {
+    margin-top: 50px;
 
+    left: 0;
+    bottom: 0;
+    height:70px;
+    width: 100%;
+    background-color: palegoldenrod;
+    font-size: 30px;
+    font-family: 'Lugrasimo', cursive;
+}
 
 
 

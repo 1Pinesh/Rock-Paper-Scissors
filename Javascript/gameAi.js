@@ -10,6 +10,8 @@ let cScore = document.getElementById("Computer-score");
 // getting player and computer choice span
 let spanPlayer = document.getElementById("player-choice");
 let spanComputer = document.getElementById("computer-choice");
+//getting winning msg
+let win_msg = document.getElementById("win-msg");
 
 // Stores player Pick
 let player_Choice =  "" ; 
@@ -88,17 +90,25 @@ function aiChoiceGenerator() {
 }
 //add the logic of who get the point
 function gameRule(pChoice,cChoice) { 
-    if (pChoice == "Rock" && cChoice == "Scissor") {
+    if ((pChoice == "Rock" && cChoice == "Scissor") || 
+        (pChoice == "Paper" && cChoice == "Rock") || 
+        (pChoice == "Scissor" && cChoice == "Paper"))
+         {
         pScore.textContent = parseInt(pScore.textContent) + 1;
-    } else if (pChoice == "Rock" && cChoice == "Paper") {
+        win_msg.textContent = "you win this round"
+        setTimeout (()=> {
+            win_msg.textContent = ""
+        },2000)
+         } 
+    else if ((pChoice == "Rock" && cChoice == "Paper") || 
+             (pChoice == "Paper" && cChoice == "Scissor") || 
+             (pChoice == "Scissor" && cChoice == "Rock") )
+         {
         cScore.textContent = parseInt(cScore.textContent) + 1;
-    } else if (pChoice == "Paper" && cChoice == "Rock") {
-        pScore.textContent = parseInt(pScore.textContent) + 1;
-    } else if (pChoice == "Paper" && cChoice == "Scissor") {
-        cScore.textContent = parseInt(cScore.textContent) + 1;
-    } else if (pChoice == "Scissor" && cChoice == "Paper") {
-        pScore.textContent = parseInt(pScore.textContent) + 1;
-    } else if (pChoice == "Scissor" && cChoice == "Rock") {
-        cScore.textContent = parseInt(cScore.textContent) + 1;
-    }
+        win_msg.textContent = "Computer win this round"
+        setTimeout (()=> {
+            win_msg.textContent = ""
+        },2000)
+        
+         } 
 }
