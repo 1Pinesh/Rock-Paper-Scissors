@@ -109,6 +109,5 @@ function gameRule(pChoice,cChoice) {
         setTimeout (()=> {
             win_msg.textContent = ""
         },2000)
-        
          } 
 }

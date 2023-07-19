@@ -130,8 +130,6 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Lugrasimo', cursive;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
 }
 
 /* Footer */
@@ -141,8 +139,7 @@ body{
     align-items: center;
 }
 .foot {
-    margin-top: 50px;
-
+    margin-top: 10px;
     left: 0;
     bottom: 0;
     height:70px;
