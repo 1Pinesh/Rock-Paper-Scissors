@@ -48,13 +48,11 @@ body{
 /*********************Main-Section****************************/
 /* adding a margin to left and right*/
 .main {
-    border: 1px solid red;
     margin-left: 50px;
     margin-right: 50px;
 }
 /* adding a margin all around*/
 .outline-con{
-    border: 1px solid black;
     margin: 30px;
 }
 /* getting the score in the centre */
@@ -67,6 +65,11 @@ body{
 .score {
     font-size: 35px;
     font-family: 'Lugrasimo', cursive;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
 }
 /* Setting the title to the centre */
 .title-text{
@@ -98,6 +101,27 @@ body{
     border-radius: 15px;
     box-shadow: 0 5px 5px;
 }
+
+.selection-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+.player-selection ,.computer-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+}
+
+
+
+
+
 
 
 
