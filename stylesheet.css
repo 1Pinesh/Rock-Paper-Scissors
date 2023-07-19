@@ -69,7 +69,8 @@ body{
 
 .score {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 /* Setting the title to the centre */
 .title-text{
@@ -109,13 +110,17 @@ body{
     margin-top: 50px;
 
 }
-.player-selection ,.computer-selection {
+.player-option ,.computer-option {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    border: 3px solid black;
     font-size: 50px;
+}
+
+.player-option ,.computer-option {
+ padding: 50px;
 }
 
 
