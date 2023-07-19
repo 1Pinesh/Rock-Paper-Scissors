@@ -42,8 +42,7 @@ r.addEventListener("click", () => {
 })
 
 p.addEventListener("click", () => {
-    player_choice = "Paper"
-    
+    player_Choice = "Paper"
     let aiValue = aiChoiceGenerator()
     switch(aiValue) {
         case 1 :
@@ -59,13 +58,11 @@ p.addEventListener("click", () => {
     const comp = computer_Choice
     spanComputer.textContent = comp
    gameRule(player_Choice,computer_Choice)
-   spanPlayer.textContent = "paper"
+   spanPlayer.textContent = "Paper"
 })
 
 s.addEventListener("click", () => {
-    player_choice = "Scissor"
-    
-    
+    player_Choice = "Scissor"
     let aiValue = aiChoiceGenerator()
     switch(aiValue) {
         case 1 :
@@ -81,7 +78,7 @@ s.addEventListener("click", () => {
     const comp = computer_Choice
     spanComputer.textContent = comp
    gameRule(player_Choice,computer_Choice)
-   spanPlayer.textContent = "Scissor"
+    spanPlayer.textContent = "Scissor"
 })
 
 // get a number from 1 to 3 and round any decimal to the closet interger
@@ -94,10 +91,13 @@ function gameRule(pChoice,cChoice) {
         (pChoice == "Paper" && cChoice == "Rock") || 
         (pChoice == "Scissor" && cChoice == "Paper"))
          {
+            
         pScore.textContent = parseInt(pScore.textContent) + 1;
         win_msg.textContent = "you win this round"
         setTimeout (()=> {
             win_msg.textContent = ""
+            spanPlayer.textContent = ""
+            spanComputer.textContent= ""
         },2000)
          } 
     else if ((pChoice == "Rock" && cChoice == "Paper") || 
@@ -108,6 +108,18 @@ function gameRule(pChoice,cChoice) {
         win_msg.textContent = "Computer win this round"
         setTimeout (()=> {
             win_msg.textContent = ""
+            spanPlayer.textContent = ""
+            spanComputer.textContent= ""
         },2000)
          } 
+    else if ((pChoice == "Rock" && cChoice == "Rock") || 
+    (pChoice == "Paper" && cChoice == "Paper") || 
+    (pChoice == "Scissor" && cChoice == "Scissor") ) {
+        win_msg.textContent = "It is a Tie"
+        setTimeout (()=> {
+            win_msg.textContent = ""
+            spanPlayer.textContent = ""
+            spanComputer.textContent= ""
+        },2000)
+    }    
 }
